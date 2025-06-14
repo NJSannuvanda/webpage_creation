@@ -1,28 +1,74 @@
 <!-- Declares the document type as HTML5 -->
 <!-- Tells the browser: "This is an HTML document using modern standards." -->
-<!DOCTYPE html>                                                                   <!-- Starts the HTML document. indicates the language is english -->
-<html lang="en">                                                                  <!-- The <head> section contains metadata and configuration for the page (not visible to users). -->
+<!DOCTYPE html>
+
+<!-- Starts the HTML document and indicates the language is English -->
+<html lang="en">
+
+<!-- The <head> section contains metadata and configuration for the page (not visible to users). -->
 <head>
-  <meta charset="UTF-8">                                                          <!-- Sets the character encoding to UTF-8 (supports almost all characters, including symbols and emojis). -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">          <!-- Makes the site responsive on mobile devices. with match the screen’s width &  sets initial zoom level -->
-  <title>My First Web Page</title>                                                <!-- Sets the title shown in the browser tab or window title bar. -->
-  <link rel="stylesheet" href="styles.css">                                       <!-- Link to external CSS -->
+  <meta charset="UTF-8">  <!-- Sets the character encoding to UTF-8 (supports almost all characters, including symbols and emojis). -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the site responsive on mobile devices by matching the screen width and setting initial zoom level -->
+  
+  <title>My First Web Page</title>  <!-- Sets the title shown in the browser tab or window title bar. -->
+
+  <!-- Embedded CSS to add background color and font styling -->
+  <style>
+    body {
+      background-color: #f0f8ff; /* Light pastel blue background */
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #d0eaff; /* Light blue banner for header/footer */
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background-color: #87cefa;
+      margin: 0;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    footer {
+      font-size: 14px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="styles.css"> <!-- Optional external CSS (will override or add to above styles if used) -->
 </head>
 <!-- Ends the head section -->
 
 <!-- This is the visible part of the web page where all content appears. -->
 <body>
 
-  <!-- The <header> is a semantic tag that usually contains titles, logos, or top navigation. 
-       <h1> is the main heading (only one per page recommended). -->
+  <!-- The <header> is a semantic tag that usually contains titles, logos, or top navigation. -->
   <header>
     <h1>Welcome to My Website</h1>                                              
   </header>
 
-  <!--  <nav> contains navigation links.
-        <ul> = unordered list.
-        <li> = list item.
-        <a href="#"> = hyperlink placeholder (you can replace # with actual URLs like about.html). -->
+  <!-- <nav> contains navigation links -->
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
@@ -31,10 +77,7 @@
     </ul>
   </nav>
 
-  <!--  <main>: the main content area of the page (only one per page).
-        <section>: a logical grouping of related content.
-        <h2>: a subheading (you can have multiple h2s).
-        <p>: paragraph text.-->
+  <!-- <main>: the main content area -->
   <main>
     <section>
       <h2>About Me</h2>
@@ -42,12 +85,10 @@
     </section>
   </main>
 
-  <!-- <footer>: shows copyright or contact info.
-       &copy; is an HTML entity that displays the © symbol.-->
+  <!-- <footer>: shows copyright or contact info -->
   <footer>
     <p>&copy; 2025 My Website</p>
   </footer>
 
-<!-- Closes the body and entire HTML document. -->
 </body>
 </html>
